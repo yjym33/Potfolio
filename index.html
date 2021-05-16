@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoungJin's Protfolio</title>
+    <meta name="description" content="Front-engineer Portfolio" />
+    <meta name="author" content="YoungJin" />
+    <link rel="icon" type="image/favicon" href="img/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/b9f9b0f4fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Noto+Sans+KR:wght@400;700&family=DM+Sans:wght@400;500;700&family=Lobster&family=Noto+Sans+HK:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css//reset.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="backBtn active">
+      <i class="fas fa-home"></i>
+    </div>
+    <!-- navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img src="./img/favicon.png" alt="logo" class="navbar__img" />
+        <a href="index.html" class="navbar__logo__name">YoungJin</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu__head">
+          <li class="navbar__menu__item select" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skill">Skill</li>
+          <li class="navbar__menu__item" data-link="#project">Project</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+      </div>
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!-- section -->
+    <!-- home -->
+    <section id="home">
+      <div class="content home__container">
+        <img src="./img/avata.png" alt="avata" class="home__avata" />
+        <h1 class="home__title">Hello , <br />I'm YoungJin</h1>
+        <h2 class="home__subtitle">Frontend-engineer <br> 김영진</h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+      <div class="content about__container">
+        <h1 class="about__title">About Me</h1>
+        <h2 class="about__subtitle">
+          새로운것을 배우는걸 두려워하지 않고 <br />
+          도전하는 프론트앤드 개발자 입니다. <br />
+          Javascript, React, Java, Python을 경험했고<br />
+          새로운 기술을 배워서 적용하는걸 재미있어 하고, 계획세워서 진행하는걸 좋아합니다.<br />
+        </h2>
+        <div class="about__icon">
+          <div class="about__icon__content">
+            <i class="fab fa-html5"></i>
+            <h3 class="about__icon__name">HTML</h3>
+          </div>
+          <div class="about__icon__content">
+            <i class="fab fa-css3-alt"></i>
+            <h3 class="about__icon__name">CSS</h3>
+          </div>
+          <div class="about__icon__content">
+           <i class="fab fa-js"></i>
+            <h3 class="about__icon__name">JavaScript</h3>
+          </div>
+          <div class="about__icon__content">
+           <i class="fab fa-react"></i>
+            <h3 class="about__icon__name">React</h3>
+          </div>
+          <div class="about__icon__content">
+          <i class="fab fa-java"></i>
+            <h3 class="about__icon__name">Java</h3>
+          </div>
+          <div class="about__icon__content">
+          <i class="fab fa-python"></i>
+            <h3 class="about__icon__name">Python</h3>
+          </div>
+        </div>
+        <h1>Education</h1>
+        <div class="about__study">
+          <img
+            src="./img/education.png"
+            alt="study_img"
+            class="about__study__img"
+          />
+          <ul class="about__study__list">
+            <li class="about__study__item">
+              * 한양대학교 컴퓨터공학과 석사 (재학)
+            </li>
+            <li class="about__study__item">
+              * KOSTA "JAVA 웹 개발자 양성과정"수료 <br>
+              &nbsp;&nbsp;&nbsp;( 2018.06 ~ 2018.11 )
+            </li>
+          </ul>
+        </div>
+        <h1>Career</h1>
+        <div class="about__career">
+          <img
+            src="img/career.png"
+            alt="career_img"
+            class="about__career__img"
+          />
+          <ul class="about__career__list">
+            <li class="about__career__item">
+              * 솔로몬테크노서플라이 "현대건설 통합결제시스템 구축"  <br>
+             &nbsp;&nbsp;&nbsp;( 2020.02 ~ 2020.08 )
+            </li>
+          </ul>
+        </div>
+    </section>
+    <!-- skill -->
+    <section id="skill">
+      <div class="content skill__container">
+        <h1 class="skill__title">Skill</h1>
+        <div class="skill__total">
+          <div class="skill__content">
+            <p>HTML</p>
+            <div class="skill__bar">
+              <span class="skill__bar__gauge html"></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="skill__content">
+            <p>CSS</p>
+            <div class="skill__bar">
+              <span class="skill__bar__gauge css"></span>
+            </div>
+          </div>
+          <div class="skill__content">
+            <p>JAVASCRIPT</p>
+            <div class="skill__bar">
+              <span class="skill__bar__gauge javascript"></span>
+            </div>
+          </div>
+          <div class="skill__content">
+            <p>REACT</p>
+            <div class="skill__bar">
+              <span class="skill__bar__gauge react"></span>
+            </div>
+          </div>
+          <div class="skill__content">
+            <p>Typescript</p>
+            <div class="skill__bar">
+              <span class="skill__bar__gauge Typescript"></span>
+            </div>
+          </div>
+          <div class="skill__content">
+            <p>Java / Python</p>
+            <div class="skill__bar">
+              <span class="skill__bar__gauge Java"></span>
+              <span class="skill__bar__gauge Python"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill__tools">
+          <div class="skill__tools__list">
+            <img src="./img/tool.png" alt="book" class="skill__tools__img" />
+            <div class="skill__tools__now">
+              <p>Tools</p>
+              <ul>
+                <li>Eclipse</li>
+                <li>IntelliJ</li>
+                <li>Visual studio Code</li>
+              </ul>
+              <br>
+              <p>Etc</p>
+              <ul>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project -->
+    <section id="project">
+      <div class="content project__container">
+        <h1 class="project__title">My Project</h1>
+        <div class="container project__category">
+          <div class="project__sub">
+            <a href="https://github.com/yjym33" target="blank">
+              <img
+                src="./img/project/youtube.png"
+                alt="protfolio site"
+                class="project__name"
+              />
+              <div class="project__description">
+                <h3>youtube clone site</h3>
+                <p>
+                  youtube api를 이용한 <br />
+                  clone site with React
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="project__sub">
+            <a href="https://github.com/yjym33" target="blank">
+              <img
+                src="./img/project/carrot.png"
+                alt="당근게임"
+                class="project__name"
+              />
+              <div class="project__description">
+                <h3>Carrot Game</h3>
+                <p>
+                  시간내에 당근줍기 게임<br />
+                  with vanilla JavaScript
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="project__sub">
+            <a href="" target="blank">
+              <img
+                src=""
+                alt=""
+                class="project__name"
+              />
+              <div class="project__description">
+                <h3>Portfolio</h3>
+                <p>Explanation</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="project__sub">
+            <a href="" target="blank">
+              <img
+                src=""
+                alt=""
+                class="project__name"
+              />
+
+              <div class="project__description">
+                <h3>Portfolio</h3>
+                <p>Explanation</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="project__sub">
+            <a href="" target="blank">
+              <img
+                src=""
+                alt=""
+                class="project__name"
+              />
+              <div class="project__description">
+                <h3>Portfolio</h3>
+                <p>Explanation</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="project__sub">
+            <a
+              href=""
+              target="blank"
+            >
+              <img
+                src=""
+                alt=""
+                class="project__name"
+              />
+              <div class="project__description">
+                <h3>Portfolio</h3>
+                <p>Explanation</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- contact -->
+    <section id="contact">
+      <div class="content">
+        <h1 class="contact__title">Contact</h1>
+        <h2 class="contact__mail">yjym33@naver.com</h2>
+        <h3 class="contact__git">
+          <a href="https://github.com/yjym33" target="blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </h3>
+        <span class="contact__reserved"
+          >2021 YoungJin Protfolio-All right reserved</span
+        >
+      </div>
+    </section>
+  </body>
+</html>
